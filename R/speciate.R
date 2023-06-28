@@ -593,7 +593,7 @@ speciate <- function(x = 1,
           e_eci = 0,
           e_ecj = 0.056 + 0.024#,h2o = 0.277
         )
-      } else if (spec == "pm2023") {
+      } else if (spec == "pm20232") {
         df <- data.frame(
           e_so4i = 0.003672,
           e_so4j = 0.023328,
