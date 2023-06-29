@@ -546,7 +546,7 @@ speciate <- function(x = 1,
       dfb <- as.list(dfb)
     }
     # PM ####
-  } else if (spec %in% c("pmiag", "pmneu", "pmneu2","pm2023")) {
+  } else if (spec %in% c("pmiag", "pmneu", "pmneu2","pm2023v2")) {
     if(verbose) message("Input emissions must be in g/(km^2)/h\n")
     if(verbose) message("Output flux will be  ug/(m^2)/s\n")
     if(verbose) message("PM.2.5-10 must be calculated as substraction of PM10-PM2.5 to enter this variable into WRF")
@@ -593,7 +593,7 @@ speciate <- function(x = 1,
           e_eci = 0,
           e_ecj = 0.056 + 0.024#,h2o = 0.277
         )
-      } else if (spec == "pm2023cor") {
+      } else if (spec == "pm2023v2") {
         df <- data.frame(
           e_so4i = 0.00646,
           e_so4j = 0.04104,
